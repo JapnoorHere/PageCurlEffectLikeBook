@@ -14,11 +14,11 @@ class BookActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         imageList=ArrayList()
-
+        arrayOf(R.drawable.page1)
         imageList.add(R.drawable.page1)
         imageList.add(R.drawable.page2)
 
-        binding.pageCurlView.setCurlView(imageList)
+        binding.pageCurlView.setCurlView(arrayOf(R.drawable.page1).toList())
         binding.pageCurlView.setCurlSpeed(600)
 
     }
